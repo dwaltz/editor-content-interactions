@@ -1,6 +1,6 @@
 html,body {
 	position: relative;
-	width: 105%;
+	width: 2300px;
 	height: 100%;
 	margin: 0;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -54,14 +54,48 @@ html,body {
 
 .region .actions-items {
 	position: absolute;
-	top: -16px;
+	top: -14px;
 	width: 100%;
-	left: 6px;
+	left: 8px;
 }
 
 .region .actions-items > span {
-	margin-right: 5px;
+	margin-right: 8px;
 	cursor: pointer;
+	float: left;
+}
+
+.region .actions-items > span.icon-pencil > i {
+	background-image:url("img/pencil.png");
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+
+.region .actions-items > span.icon-floppy > i {
+	background-image:url("img/floppy.png");
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+.region .actions-items > span.icon-trash > i {
+	background-image:url("img/trash.png");
+	display: block;
+	width: 13px;
+	height: 14px;
+}
+
+.region .actions-items > span.icon-pencil:hover > i {
+	background-image:url("img/pencil-blue.png");
+}
+
+.region .actions-items > span.icon-floppy:hover > i {
+	background-image:url("img/floppy-blue.png");
+}
+
+.region .actions-items > span.icon-trash:hover > i {
+	background-image:url("img/trash-blue.png");
 }
 
 .block {
@@ -77,16 +111,50 @@ html,body {
 
 .content .actions {
 	position: absolute;
-	right: 0;
-	top: 3px;
+	right: -2px;
+	top: 5px;
 	width: 64px;
 	opacity: 0;
 	display: block;
 }
 
 .content .actions > span {
-	margin-right: 5px;
+	margin-right: 8px;
 	cursor: pointer;
+	float: left;
+}
+
+.content .actions > span.icon-pencil > i {
+	background-image:url("img/pencil.png");
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+
+.content .actions > span.icon-floppy > i {
+	background-image:url("img/floppy.png");
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+.content .actions > span.icon-trash > i {
+	background-image:url("img/trash.png");
+	display: block;
+	width: 13px;
+	height: 14px;
+}
+
+.content .actions > span.icon-pencil:hover > i {
+	background-image:url("img/pencil-blue.png");
+}
+
+.content .actions > span.icon-floppy:hover > i {
+	background-image:url("img/floppy-blue.png");
+}
+
+.content .actions > span.icon-trash:hover > i {
+	background-image:url("img/trash-blue.png");
 }
 
 .region-pad {
@@ -182,6 +250,51 @@ html,body {
 }
 
 .region-three .content:hover .actions {
+	opacity: 1;
+	transition-delay: 100ms;
+}
+
+/*REGION FOUR*/
+.region-pad .region-four.region {
+	transition: 200ms;
+}
+
+.region-pad:hover .region-four.region {
+	background-color: #f0f8fc;
+	border: 1px solid #a6c4de;
+	transition-delay: 100ms;
+	transition: 200ms;
+}
+
+.region-pad .region-four.region > .actions {
+	transition: 400ms;
+	opacity: 0;
+}
+
+.region-pad:hover .region-four.region > .actions {
+	transition: 200ms;
+	opacity: 1;
+}
+
+.region-four .content {
+	transition: 200ms;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+.region-four .content:hover {
+	transition: 200ms;
+	border: 1px solid #4e8abe;
+	background-color: #d0e2f0;
+	transition-delay: 100ms;
+}
+
+.region-four .content .actions {
+	transition: 200ms;
+}
+
+.region-four .content:hover .actions {
+	transition: 200ms;
 	opacity: 1;
 	transition-delay: 100ms;
 }
