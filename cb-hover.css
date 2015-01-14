@@ -1,6 +1,6 @@
 html,body {
 	position: relative;
-	width: 2300px;
+	width: 3000px;
 	height: 100%;
 	margin: 0;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -297,4 +297,109 @@ html,body {
 	transition: 200ms;
 	opacity: 1;
 	transition-delay: 100ms;
+}
+
+/*REGION FIVE*/
+.region-pad .region-five.region {
+	transition: 200ms;
+}
+
+.region-pad:hover .region-five.region {
+	background-color: #f0f8fc;
+	border: 1px solid #a6c4de;
+	transition-delay: 100ms;
+	transition: 200ms;
+}
+
+.region-pad .region-five.region > .actions {
+	transition: 400ms;
+	opacity: 0;
+}
+
+.region-pad:hover .region-five.region > .actions {
+	transition: 200ms;
+	opacity: 1;
+}
+
+.region-five .content {
+	transition: 200ms;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+.region-five .content:hover {
+	transition: 200ms;
+	border: 1px solid #4e8abe;
+	background-color: #d0e2f0;
+	transition-delay: 100ms;
+}
+
+.region-five .actions {
+	left: 44%;
+	right: auto;
+}
+
+.region-five .block .content .actions {
+	transition: 200ms;
+	left: 43%;
+	top: 40%;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+	width: 73px;
+}
+
+.region-five .content:hover .actions {
+	transition: 200ms;
+	opacity: 1;
+	transition-delay: 100ms;
+}
+
+.content .actions > div {
+	float: left;
+	padding: 5px;
+	border-right: 1px solid #cccccc;
+	cursor: pointer;
+}
+
+.content .actions > div:first-child {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.content .actions > div:last-child {
+	border-right: none
+}
+
+.content .actions > div > span.icon-pencil > i {
+	background-image:url("img/pencil.png");
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+
+.content .actions > div > span.icon-floppy > i {
+	background-image:url("img/floppy.png");
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+.content .actions > div > span.icon-trash > i {
+	background-image:url("img/trash.png");
+	display: block;
+	width: 13px;
+	height: 14px;
+}
+
+.content .actions > div > span.icon-pencil:hover > i {
+	background-image:url("img/pencil-blue.png");
+}
+
+.content .actions > div > span.icon-floppy:hover > i {
+	background-image:url("img/floppy-blue.png");
+}
+
+.content .actions > div > span.icon-trash:hover > i {
+	background-image:url("img/trash-blue.png");
 }
